@@ -1,0 +1,86 @@
+<html>
+		<head>
+<style>
+#menu{
+border:1px solid black;
+width:170px;
+background-color:pink
+}
+
+#menu a{
+font:bold 15px verdana;
+padding:1px;
+width:100%;
+padding-left:2x;
+text-decoration:none;
+display:block;
+width:auto;
+border-bottom:1px solid black
+}
+
+#menu a:hover{
+background-color:red;
+color:yellow
+}
+
+#list1{
+position:relative;
+visibility:hidden;
+background-color:pink;
+color:green}
+
+</style>
+
+<script>
+var items=0;
+function showList(id)
+{
+ if(items)
+ items.style.visibility='hidden';
+ items=document.getElementById(id);
+ items.style.visibility='visible';
+
+}
+
+function hideList()
+{
+if(items)
+ items.style.visibility='hidden';
+}
+
+</script>
+</head>
+<body>
+
+<div id="menu">
+<a href="#" ondblClick="hideList()" onClick="showList('list1')">City</a>
+<ul id="link1">
+<li>Lucknow
+<li>Delhi
+<li>Bangalore
+<li>Calcutta
+<li>Varanasi
+<li>Mumbai
+<li>Chennai
+<li>Hyderabad
+<li>Chandigarh
+
+</ul>
+<a href="#" ondblClick="hideList()" onClick="showList('list1')">Items</a>
+<ul id="link1">
+<li>Refriferator
+<li>T.V.
+<li>Computer
+<li>House
+<li>Mobile
+<li>Car
+<li>Bike
+<li>Cycle
+<li>other
+
+</ul>
+
+</div>
+
+</body>
+</html>

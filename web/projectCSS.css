@@ -1,0 +1,26 @@
+/* 
+    Document   : projectCSS
+    Created on : Jul 23, 2014, 11:31:47 AM
+    Author     : shubham
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+#table1{
+    table-layout: fixed;
+    margin-left: 300px;
+    margin-top: 80px;
+    margin-right: 50px;
+}
+#showmargin{margin-top: 50px;
+            margin-left:50px 
+}
